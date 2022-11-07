@@ -116,6 +116,3 @@ class Kitsu(commands.Cog):
             )
         embed.set_image(url=result.cover_image.large)
         await interaction.edit_original_response(embed=embed, view=None)
-
-async def setup(bot):
-    await bot.add_cog(Owner(bot))
