@@ -8,22 +8,23 @@
 [![Discord Py](https://img.shields.io/pypi/v/discord.py?label=discord.py&logo=pypi&logoColor=white&labelColor=blue&color=9cf)](https://github.com/Rapptz/discord.py)
 
 
-##  A discord bot to get information from Kitsu.io 
-A discord bot written in Python useful to get directly informations about an anime or a manga inside of discord.
+##  **A discord bot to get information from Kitsu.io** 
 
+A discord bot written in Python useful to get directly informations about an anime or a manga inside of discord.
 * Customizable prefix (default: `!`)
 * Supports token authentication to Kitsu API
 * Slash Commands
 
 
-# ⭐ Prerequisites
+
+# ⭐ **Prerequisites**
 - [askitsu](https://github.com/ShomyKohai/askitsu) (the master release)
 - [discord.py 2.0+](https://pypi.org/project/discord.py/)
 - [aiohttp](https://pypi.org/project/aiohttp/)
 - [colorama](https://pypi.org/project/colorama/)
 
 
-# 🔧 Setup
+# 🔧 **Setup**
 
 1. Clone the repository and install the dependencies
     ```shell
@@ -51,7 +52,7 @@ A discord bot written in Python useful to get directly informations about an ani
     ```
 
 5. Run `!synctree` to sync shash commands
-# 💎 Commands
+# 💎 **Commands**
 
 * 🦊 Kitsu
     ```html
@@ -64,6 +65,10 @@ A discord bot written in Python useful to get directly informations about an ani
     !synctree #Sync global slash commands
     ```
 
+# 🖼️ **Pictures**
+
+<img src="https://github.com/ShomyKohai/kitsu-bot/blob/main/assets/anime.png?raw=true" width=50%></a>
+![]( )
 # License
 This project is under the GPL-3.0 license, see [LICENSE.md](LICENSE) file for details
 
