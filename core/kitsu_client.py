@@ -27,7 +27,7 @@ class KitsuClient(Client):
     async def __search_entry(
         self, type: str, query: str, limit: int, method: str
     ) -> Optional[List[Object]]:
-        cache_res = await self._cache.get(f"{type}_{query.replace(' ', '_')}_{limit}")
+        cache_res = await self.http._cache.get(f"{type}_{query.replace(' ', '_')}_{limit}")
         if cache_res:
             return cache_res.value
         variables = {"title": query, "limit": limit}
@@ -46,10 +46,10 @@ class KitsuClient(Client):
             )
             for attributes in data["data"][method]["nodes"]
         ]
-        await self._cache.add(
+        await self.http._cache.add(
             f"{type}_{query.replace(' ', '_')}_{limit}",
             fetched,
-            remove_after=self._cache_expiration,
+            remove_after=self.askitsu_cache_expiration,
         )
         return fetched
 
