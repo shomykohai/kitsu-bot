@@ -68,7 +68,8 @@ A discord bot written in Python useful to get directly informations about an ani
 # 🖼️ **Pictures**
 
 <img src="https://github.com/ShomyKohai/kitsu-bot/blob/main/assets/anime.png?raw=true" width=50%></a>
-![]( )
+<img src="https://github.com/ShomyKohai/kitsu-bot/blob/main/assets/manga.png?raw=true" width=48%></a>
+
 # License
 This project is under the GPL-3.0 license, see [LICENSE.md](LICENSE) file for details
 
