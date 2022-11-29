@@ -1,5 +1,6 @@
 from typing import Union
 import askitsu
+import config
 import discord
 
 
@@ -22,7 +23,7 @@ class KitsuEmbed(discord.Embed):
             title=entry.title.en,
             url=entry.url,
             timestamp=interaction.created_at,
-            color=0x1658FF,
+            color=config.embed_color,
             **kwargs,
         )
         desc = entry.description

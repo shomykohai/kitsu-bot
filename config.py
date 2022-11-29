@@ -1,5 +1,5 @@
 import logging
-from typing import Optional
+from discord import Status
 
 #-------------SECRET-------------#
 
@@ -14,6 +14,17 @@ https://askitsu.readthedocs.io/en/master/token.html
 
 #-------------SETTINGS-------------#
 prefix: str = "!"
+
+status = Status.online
+"""
+Possible options:
+- 'online'
+- 'offline'
+- 'idle'
+- 'dnd'
+"""
+
+embed_color = 0x1658FF
 
 askitsu_cache_expiration: int = 300 #SECONDS
 
