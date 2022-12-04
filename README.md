@@ -51,7 +51,7 @@ A discord bot written in Python useful to get directly informations about an ani
     py launcher.py
     ```
 
-5. Run `!synctree` to sync shash commands
+5. Run `!synctree` to sync slash commands
 # 💎 **Commands**
 
 * 🦊 Kitsu
