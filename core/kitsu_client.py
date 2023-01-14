@@ -35,7 +35,11 @@ class KitsuClient(Client):
         data = await self.http.post_data(
             data={"query": query_fetch, "variables": variables}
         )
-        if not data["data"][method]:
+        try:
+            data["data"]
+        except (KeyError, TypeError):
+            return None
+        if not data["data"][method]["nodes"]:
             return None
         fetched = [
             Object(
@@ -49,7 +53,7 @@ class KitsuClient(Client):
         await self.http._cache.add(
             f"{type}_{query.replace(' ', '_')}_{limit}",
             fetched,
-            remove_after=self.askitsu_cache_expiration,
+            remove_after=config.askitsu_cache_expiration,
         )
         return fetched
 

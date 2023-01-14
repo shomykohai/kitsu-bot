@@ -12,7 +12,7 @@ from .views.select import AnimeMangaDropdownView
 class Kitsu(commands.Cog):
     def __init__(self, bot: KitsuBot):
         self.bot = bot
-        bot.kitsu = KitsuClient(session=bot.session)
+        self.bot.kitsu = KitsuClient(session=bot.session)
 
     async def cog_load(self) -> None:
         print(
